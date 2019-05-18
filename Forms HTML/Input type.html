@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inputtypes testen</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Inputtekst en wachtwoord</legend>
+            Username:<br>
+            <input type="text" name="username"><br>
+            Wachtwoord:<br>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Bevestig"> 
+        </fieldset>
+        <fieldset>
+            <legend>Radio button</legend>
+            <input type="radio" name="knoppen" value="one"> One <br>
+            <input type="radio" name="knoppen" value="two"> Two <br>
+            <input type="radio" name="knoppen" value="three"> Three <br>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="voertuig1" value="auto">Auto<br>
+            <input type="checkbox" name="voertuig2" value="boot">Boot<br>
+            <input type="checkbox" name="voertuig3" value="fiets">Fiets<br>
+        </fieldset>
+        <fieldset>
+            <legend>Button via een alert</legend>
+            <input type="button" onclick="alert('Testing')" value="Testing">
+        </fieldset>
+        <fieldset>
+            <legend>Color picker</legend>
+            <input type="color" name="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datum</legend>
+            Kies een datum<br>
+            <input type="date" name="datum"><br>
+            Nog een kiezen voor 01-01-2000<br>
+            <input type="date" name="datum" max="1999-12-31"><br>
+            Nog een kiezen vanaf 01-07-2019<br>
+            <input type="date" name="datum" min="2019-07-01"><br><br>
+            <input type="datetime-local" name="datetimelocal">
+        </fieldset>
+        <fieldset>
+            <legend>Email input</legend>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Upload file</legend>
+            <input type="file" name="file">
+        </fieldset>
+        <fieldset>
+            <legend>Month and number</legend>
+            Maand en jaar<br>
+            <input type="month" name="month"><br>
+            Nummer tussen de 1 en 5<br>
+            <input type="number" name="number" min="1" max="5"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Restrictions</legend>
+            Getal kiezen tussen de 0 en 100 in stappen van 10<br>
+            <input type="number" name="eenGetalKiezen" min="0" max="100" step="10" value="30">
+            Range kiezen<br>
+            <input type="range" name="range" min="0" max="100"><br>
+            Telefoonnummer met bepaalde patroon (XXX-XX-XXXXXXXXX)<br>
+            <input type="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{9}"><br>
+            Select a time:<br>
+            <input type="time" name="usr_time"><br>
+        </fieldset>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+ 
+</html>

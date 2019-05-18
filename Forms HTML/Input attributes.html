@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input attributes</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Atttibutes</legend>
+            Readonly:<br>
+            <input type="text" name="text" value="Hallo" readonly><br>
+            Disabled:<br>
+            <input type="text" name="text" value="Dag" disabled><br>
+            Size:<br>
+            <input type="text" name="size" value="Tot ziens!" size="100" maxlength="5">
+        </fieldset>
+        <fieldset>
+            <legend>Hallo</legend>
+        </fieldset>
+        <br><br>
+        <input type="reset">
+        <br><br>
+        <fieldset>
+            <legend>Autocomplete en autofocus</legend>
+            Voornaam:<br>
+            <input type="text" name="voornaam" autocomplete="on"><br>
+            Achternaam (autofocus & autocomplete): <br>
+            <input type="text" name="achternaam" autocomplete="off" autofocus><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Form atrribute </legend>
+            <form action="/action_page.php" id="form1">
+                Voornaam: <br>
+                <input type="text" name="voornaam"><br>
+                <input type="submit" formtarget="_blank"><br>
+            </form>
+            Achternaam<br>
+            <input type="text" name="achternaam" form="form1" placeholder="Achternaam" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Upload file</legend>
+            Single file<br>
+            <input type="file" name="onefile"><br>
+            Multiple files:<br>
+            <input type="file" name="multiplefiles" multiple><br>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

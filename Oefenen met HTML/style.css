@@ -1,0 +1,45 @@
+h6 {
+    color: hotpink;
+    font-family: sans-serif;
+    font-size: 50px;
+    border: 2px solid red;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+#jojo {
+    color: blue;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+p.jojo2 {
+    color: green;
+
+}
+a:link {
+    color: green;
+    background-color: hotpink;
+}
+
+a:hover {
+    color: blue;
+    background-color: yellow;
+}
+a:active {
+    color: tomato;
+    background-color: black;
+}
+
+table, th, td {
+    border: 1px solid red;
+    padding: 3px;
+}
+
+th{
+    text-align: left;
+}
+table {
+    border-spacing: 5px;
+
+}

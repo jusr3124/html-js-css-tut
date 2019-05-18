@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Oefenen met Forms</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    <form action="/action_page.php" target="_blank">
+        <fieldset>
+            <legend>Inputvelden: </legend>
+            Voornaam:<br>
+            <input type="text" name="voornaam" value="Jusreiza"><br>
+            Achternaam:<br>
+            <input type="text" name="achternaam" value="Kadir"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Radio button: </legend>
+            <input type="radio" name="geslacht" value="Man"> Man <br>
+            <input type="radio" name="geslacht" value="Vrouw"> Vrouw <br>
+            <input type="radio" name="geslacht" value="Anders"> Anders <br>
+            <input type="submit" value="ok">
+        </fieldset>
+        <fieldset>
+            <legend>Selecteren via een dropdownlist: </legend>
+            <select name="fruit">
+                <option value="appel">Appel</option>
+                <option value="peer">Peer</option>
+                <option value="banaan" selected>Banaan</option>
+                <option value="aardbei">Aardbei</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Selecteren via een list: </legend>
+            <select name="fruit" size="2">
+                <option value="appel">Appel</option>
+                <option value="peer">Peer</option>
+                <option value="banaan" selected>Banaan</option>
+                <option value="aardbei">Aardbei</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Meerdere selecteren via een list: </legend>
+            <select name="fruit" multiple>
+                <option value="appel" selected>Appel</option>
+                <option value="peer">Peer</option>
+                <option value="banaan">Banaan</option>
+                <option value="aardbei">Aardbei</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tekstveld met rows and cols</legend>
+            <textarea name="message" rows="4" cols="20"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Tekstveld via css doormiddel van width en height</legend>
+            <textarea name="message" style="width: 100%; height: 100%;"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Testingknop met een alert</legend>
+            <button type="button" onclick="alert('Testing')">Testingknop</button>
+        </fieldset>
+        <fieldset>
+            <legend>Tekstveld zoeken in een database</legend>
+            <input list="voertuigen">
+            <datalist id="voertuigen">
+                <option value="auto">
+                <option value="fiets">
+                <option value="vliegtuig">
+                <option value="boot">
+                <option value="ruimteschip">
+            </datalist>
+        </fieldset>
+        <fieldset oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <legend>Rekenmachine</legend>
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 + 
+            <input type="number" id="b" name="b" value="50">
+            <br><br>
+            =
+            <output name="x" for="a b"></output>
+        </fieldset>
+        <input type="reset">
+    </form>
+</body>
+
+</html>
